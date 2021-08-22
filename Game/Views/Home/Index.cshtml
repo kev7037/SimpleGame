@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "GameSample";
+}
+
+<div id="GamePage">
+    <div id="img_holder_div">
+        <img id="img_to_guess" src="" />
+    </div>
+
+    <div id="TopCenter">
+        <div class="row begin-countdown">
+            <div class="col-md-12 text-center">
+                <progress value="3" max="3" id="pageBeginCountdown"></progress>
+                <p><span id="pageBeginCountdownText">3 </span> seconds left!</p>
+            </div>
+        </div>
+    </div>
+    <div id="LeftTopCorner">
+        <button id="Btn_Japanese" class="btn btn-info" onclick="guess(1)">Japanese</button>
+    </div>
+    <div id="RightTopCorner">
+        <button id="Btn_Chinese" class="btn btn-info" onclick="guess(2)">Chinese</button>
+    </div>
+    <div id="LeftBottomCorner">
+        <button id="Btn_Korean" class="btn btn-info" onclick="guess(3)">Korean</button>
+    </div>
+    <div id="RightBottomCorner">
+        <button id="Btn_Thai" class="btn btn-info" onclick="guess(4)">Thai</button>
+    </div>
+    <div id="BottomCenter">
+        <div id="score_div" class="rounded shadow-sm py-5 px-4">
+            <h5 class="mb-0">Score: <span id="score_span">0</span></h5>
+        </div>
+    </div>
+</div>
+
+<div id="ResultPage">
+    <div class="card text-center">
+        <div class="card-header">Game Over!</div>
+        <div class="card-body">
+            <h5 class="card-title">YOUR SCORE</h5>
+            <p id="TotalPoints" class="card-text"></p>
+            <p class="card-text">YOU ANSWERED <span id="TotalCorrectAnswersSpan"></span>/10 CORRECTLY</p>
+            <a href="/" class="btn btn-warning">Wanna play again?</a>
+        </div>
+        <div class="card-footer text-muted">better luck next time :)</div>
+    </div>
+</div>

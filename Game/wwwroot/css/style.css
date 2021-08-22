@@ -1,0 +1,38 @@
+body { position:relative }
+#LeftTopCorner { position:fixed; top: 20px; left: 20px; }
+#LeftBottomCorner { position:fixed; bottom:20px; left:20px; }
+#RightTopCorner { position:fixed; top: 20px; right:20px; }
+#RightBottomCorner { position:fixed; bottom: 20px; right: 20px; }
+#BottomCenter { position:fixed; bottom: 20px; right: 50%; }
+#TopCenter { position:fixed; top: 5%; right: 50%; }
+#Btn_Japanese, #Btn_Chinese, #Btn_Korean, #Btn_Thai {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    font-size: 28px;
+}
+#img_to_guess {
+    display: inline-block;
+    max-width: 250px;
+    height: 100%;
+}
+
+#img_holder_div {
+    position: fixed;
+    top: 10%;
+    left: 40%;
+    display: none;
+    z-index: 10;
+}
+#img_to_guess {
+    background-repeat:  no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    max-width : 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ResultPage { display: none; }
